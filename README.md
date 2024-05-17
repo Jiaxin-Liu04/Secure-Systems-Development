@@ -13,7 +13,9 @@ The Bitcoin Node Connection Application is a Java program designed to establish 
 Internal Architecture:
 The application is structured around the following key components:
 1.BitcoinNodeConnection.java: This class encapsulates the functionality required to establish a connection with a Bitcoin node, send and receive messages, and manage the interaction with the node. It handles socket communication, message serialization, and deserialization, as well as message processing logic.
+
 2.MessageParser.java: This utility class provides methods for parsing Bitcoin protocol messages received from the Bitcoin node. It abstracts away the details of message structure and provides a clean interface for extracting relevant information from incoming messages.
+
 3.Main.java: Serving as the entry point of the application, this class instantiates the BitcoinNodeConnection object and initiates the connection process with the Bitcoin node. It orchestrates the execution flow of the application and handles any exceptions that may occur during runtime.
 
 
